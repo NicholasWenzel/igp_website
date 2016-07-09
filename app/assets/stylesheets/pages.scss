@@ -1,0 +1,379 @@
+
+// - - - - -Variables - - - - //
+
+$white: #FFFFFF;
+$orange: #ffa300;
+$blue: #2e1a47;
+$dark_grey: #7f7f7f;
+$light_grey: #d8dcde;
+
+// - - - - -Global Configuration - - - - //
+
+
+
+// - - - - -Specific Configuration - - - - //
+
+.section {
+  background: url("pic.png");
+
+}
+
+.container_first {
+  box-sizing: border-box;
+  background: url("pic.png");
+  padding: 80px;
+  height: 550px;
+
+}
+
+.banner_picture {
+  background-image: url("girl.jpg");
+	background-size: cover;
+	background-repeat: none;
+  height: 580px;
+
+}
+
+.value_proposition {
+  margin: 100px 0 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: $white;
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.logos {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $white;
+  padding: 0 20px 0 0;
+  margin: -40px 0;
+
+  height: 80px;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+
+}
+
+
+  .orange_line-3 {
+    box-sizing: border-box;
+    background-color: #ffa300;
+    margin: 20px 10px 0 10px;
+    width: 23%;
+    float: left;
+    height: 3px;
+  }
+
+  .employer-3 {
+    box-sizing: border-box;
+    width: 23%;
+    margin: 10px 10px 0px 10px;
+    float:left;
+    background-color: $white;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+
+  }
+
+  .employer-logo1 {
+    padding: 20px;
+    text-align: center;
+    margin: 0px 10px 15px 10px;
+  }
+
+  .employer-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: $dark_grey;
+    text-align: left;
+  }
+
+  .employer-sub-title {
+    font-size: 14px;
+    font-weight: 200;
+    color: $orange;
+    text-align: left;
+  }
+
+
+  .certified {
+    color: $blue;
+    padding: 0 0px 0 10px;
+    font-size: 18px;
+    font-weight: 600px;
+  }
+
+  .certified2 {
+    color: $blue;
+    padding: 0 0px 0 10px;
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 0 0 20px 40px;
+  }
+
+  // -  - - Job Offers List - - - -//
+
+  ul {
+  list-style: none;
+}
+
+.container {
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+}
+
+.container-grey {
+  background: url("pic.png");
+}
+
+.row {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col8 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  width: 66.66667%;
+}
+
+.container-vertical-scroll {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 30px;
+  width: 100%;
+}
+
+
+.job-offer-teaser-slim
+.job-offer-teaser {
+  padding: 15px;
+
+
+}
+
+.job-offer-teasers .job-offer-teaser {
+  margin-bottom: 5px;
+  height: 60px;
+}
+
+.job-offer-teasers .job-offer-teaser-logo {
+    text-align: center;
+
+  }
+
+.col10 {
+  box-sizing: border-box;
+position: relative;
+float: left;
+padding: 0 10px;
+width: 83.33333%;
+}
+
+.job-offer-teasers .job-offer-teaser-title {
+    font-weight: bold;
+  }
+
+.job-offer-teasers .job-offer-teaser-company {
+    display: inline-block;
+  }
+
+  // -  - - Testing - - - -//
+
+
+  .flowingdown {
+      width:1045px;
+      background-image:url(http://i.imgur.com/hHUa9Ty.jpg);
+      height:50px;
+      float:left;
+      margin-top:2px;
+      margin-bottom:2px;
+      border-radius:0 0 55px 55px;
+      transition: height 1s;
+      -webkit-transition: height 1s;
+  }
+  .flowingdown:hover {
+      height:100%;
+  }
+
+  .center-align {
+    text-align: center;
+  }
+
+  .orange_line-test {
+
+    background-color: #ffa300;
+    height: 3px;
+
+  }
+
+  .employer-test {
+    box-sizing: border-box;
+    height: 200px;
+    margin: 10px 10px 0px 10px;
+    background-color: $orange;
+
+  }
+
+  .container-test {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+  }
+
+  .box {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    background-color: blue;
+  }
+
+.text {
+  height: 200px;
+  padding:20px;
+  margin: auto;
+  color: white;
+  box-sizing: border-box;
+}
+
+.secret-text {
+  height: 200px;
+  margin: auto;
+  background-color: red;
+
+}
+.box:hover {
+  height:auto;
+}
+
+
+// - - - Hover Test - -- //
+
+// position the box in a container
+// position the box in a container
+.col {
+  width: 22%;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 10px;
+}
+
+.employer-3 {
+  box-sizing: border-box;
+  width: 23%;
+  margin: 10px 10px 0px 10px;
+  float:left;
+  background-color: $white;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+
+}
+
+.box {
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 10px 0px 10px;
+  box-sizing: border-box;
+  float: left;
+
+  padding: 5px;
+
+  background-color: $white;
+
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+
+  // scale the box from horizontal center, and vertical top
+  transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+
+  // apply a transition
+  transition: transform .5s ease-out;
+  -webkit-transition: transform .5s ease-out;
+}
+
+.box__footer {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background-color: $white;
+  width: 80%;
+
+  display: none;
+  padding: 10px;
+}
+
+// on hover, scale the box 1.
+// and display the footer
+.box:hover {
+  z-index: 20;
+
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.box:hover .box__footer {
+    display: block;
+}
+
+
+// - end of hover test - -
+
+// - new classes for employer display on landing page - - //
+
+.employer-picture-1 {
+  background-image: url(girl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.employer-picture-2 {
+  background-image: url(banner_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 50%;
+  float: left;
+}
+
+
+.employer-text {
+  background-color: $white;
+}
+
+.employer-container-1 {
+  box-sizing: border-box;
+  margin: 20px 20px 20px 50px;
+  height: 420px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  float: left;
+  background-color: $white;
+
+}
+
+.employer-container-2 {
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  float: left;
+  background-color: $white;
+
+
+}
+
+.employer-right-text {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}

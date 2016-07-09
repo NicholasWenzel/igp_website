@@ -1,0 +1,204 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<section class="banner">
+<div class="center">Find paid internships
+</section>
+
+<div class="container_new background-section-grey">
+	<div class="row-new">
+		<div class="col8">
+			<div class="title-jobs">Aktuelle Stellenangebote</div>
+			<ul class="container-vertical-scroll job-offer-teasers">
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><img src="/images/EYF.jpg" height="40" width="40"</a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<% offer = Offer.first %>
+						<%= link_to offer.company, offer %><br>
+						<%= link_to offer.remuneration, offer %> €
+
+
+
+				</div>
+			</div>
+
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><% offer = Offer.second %>
+							<%= image_tag offer.image.url(:thumb) %></a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<% offer = Offer.second %>
+						<%= link_to offer.company, offer %><br>
+						<%= link_to offer.remuneration, offer %> €
+
+
+				</div>
+				</div>
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><% offer = Offer.third %>
+							<%= image_tag offer.image.url(:thumb) %></a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<% offer = Offer.last %>
+						<%= link_to offer.company, offer %><br>
+						<%= link_to offer.remuneration, offer %> €
+
+
+				</div>
+				</div>
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><img src="/images/EYF.jpg" height="40" width="40"</a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<a href="#"> Junior Controller<br>
+							European Youth Forum</a>
+
+
+				</div>
+				</div>
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><img src="/images/EYF.jpg" height="40" width="40"</a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<a href="#"> Junior Controller<br>
+							European Youth Forum</a>
+
+
+				</div>
+				</div>
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><img src="/images/EYF.jpg" height="40" width="40"</a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<a href="#"> Junior Controller<br>
+							European Youth Forum</a>
+
+
+				</div>
+				</div>
+				</li>
+
+				<li class="panel job-offer-teaser">
+					<div class="col2">
+						<div class="job-offer-teaser-logo">
+							<a href="#"><img src="/images/EYF.jpg" height="40" width="40"</a>
+
+
+					</div>
+				</div>
+				<div class="col10">
+					<div class="job-offer-teaser-description">
+						<a href="#"> Junior Controller<br>
+							European Youth Forum</a>
+
+
+				</div>
+				</div>
+				</li>
+
+			</ul>
+			<div class="gutter20 title-jobs">
+				<a href="20"> Alle Stellenangebote </a>
+			</div>
+		</div>
+		<div class="col4">
+		<div class="homepage-stats">
+			<h2> Über das Gütesiegel  </h2>
+			<div class="panel2">
+				<a href="#">This is some text.<br><br> </a>
+		</div>
+
+		<div class="panel2">
+			<a href="#">This is some text. </a>
+	</div>
+
+	</div>
+	</div>
+</div>
+</div>
+
+
+
+
+<h1>Listing Offers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Type</th>
+      <th>Remuneration</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offers.each do |offer| %>
+      <tr>
+        <td><%= offer.company %></td>
+        <td><%= offer.type %></td>
+        <td><%= offer.remuneration %></td>
+				<td><%= image_tag offer.image.url(:thumb) %></td>
+				<td><%= link_to 'Show', offer %></td>
+        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<% offer = Offer.second %>
+<%= image_tag offer.image.url(:thumb) %>
+
+<br>
+
+<%= link_to 'New Offer', new_offer_path %>

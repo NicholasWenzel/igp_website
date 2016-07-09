@@ -1,0 +1,368 @@
+// Place all the styles related to the employers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// - - - - - - - Variables - - - - - - -//
+
+$white: #FFFFFF;
+$orange: #ffbd23;
+$blue: #2e1a47;
+$dark_grey: #7f7f7f;
+$light_grey: #d8dcde;
+
+// - - - - - Global Styling - - - - //
+
+
+.header-container {
+  background-color: $orange;
+  height: 43px;
+  float: left;
+  width: 100%;
+  position: fixed;
+
+}
+
+.header-division {
+  padding: 15px 15px 15px 95px;
+  color: $dark_grey;
+  float: left;
+  position: fixed;
+
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  background-color: $white;
+  position: fixed;
+
+}
+
+.nav-text {
+  float: right;
+  top: 50%;
+  color: $dark_grey;
+  position: relative;
+}
+
+.logo {
+  background: url('logo.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.banner {
+  background-image: url("girl.jpg");
+	background-size: cover;
+	background-repeat: none;
+  height: 580px;
+  clear: left;
+}
+
+.center {
+  padding-top: 200px;
+  width: 100%;
+  text-align: center;
+  color: $white;
+  font-size: 2rem;
+}
+
+// - - - - Classes for logo display - - - -//
+
+.logo-display {
+  box-sizing: border-box;
+  margin: -40px 20px 20px 20px;
+  width: 100%;
+  height: 80px;
+  background-color: $white;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+.logo-each {
+  padding: 15px 25px;
+  margin: 0 10px;
+  float: left;
+}
+
+.background-section-white {
+  background-color: $white;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+.background-section-grey {
+  background-image: url("pic.png");
+}
+
+// - - - - CSS for the job section - - - -//
+
+.job-offer-title {
+  color: $orange;
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 15px;
+
+}
+
+
+
+.job-offer-teaser-container {
+  background-color: $white;
+  padding-top: 10px;
+}
+
+.job-offer-teaser-title {
+  text-align: left;
+  color: $orange;
+}
+
+.job-offer-teaser-subtitle {
+  text-align: left;
+  color: $blue;
+
+}
+
+.right-section {
+  background-color: $orange;
+}
+
+.col2 {
+  background-color: $white;
+}
+
+.box-shadow {
+
+  background-color: $orange;
+  margin: 5px;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+//- - NEW CSS FOR THE JOB SECTION - - -//
+
+.container_new {
+  padding: 40px 0;
+  position: relative;
+  min-width: 1080px;
+  height: 581px;
+
+  box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+
+}
+
+
+
+.row-new {
+  box-sizing: border-box;
+  width: 1080px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.col8 {
+
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    width: 66.66667%;
+}
+
+.container-vertical-scroll {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.container-vertical-scroll::-webkit-scrollbar {
+    width: 12px;
+    height: 0px;
+}
+
+.container-vertical-scroll::-webkit-scrollbar-button {
+    background-color: #666;
+}
+
+.container-vertical-scroll::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 0px;
+}
+
+.container-vertical-scroll::-webkit-scrollbar-track {
+    background-color: #999;
+}
+
+.container-vertical-scroll::-webkit-scrollbar-track-piece {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+}
+
+.job-offer-teasers {
+  margin-bottom: 5px;
+  height: 60px;
+}
+
+.job-offer-teaser {
+  margin-bottom: 5px;
+  height: 60px;
+}
+
+.job-offer-teaser-slim {
+  padding: 15px;
+}
+
+.col2 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  width: 16.66667%;
+}
+
+.job-offer-teaser-logo {
+  text-align: center;
+}
+
+.col10 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  width: 83.33333%;
+}
+
+.job-offer-teaser-company {
+    display: inline-block;
+}
+
+.job-offer-teasers {
+    display: inline-block;
+}
+
+.panel {
+-webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+.gutter20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col4 {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    width: 33.33333%;
+}
+
+.homepage-stats {
+  box-sizing: border-box;
+
+}
+
+.panel2 {
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+padding: 10px;
+position: relative;
+margin-bottom: 20px;
+background-color: $white;
+}
+
+// - - - - The employer page teaser - - - //
+
+.employer-title {
+  font-size: 16px;
+  font-weight: 300;
+  color: $dark_grey;
+
+}
+
+.employer-picture-1 {
+  background-image: url(girl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.employer-picture-2 {
+  background-image: url(banner_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 50%;
+  float: left;
+}
+
+
+.employer-text {
+  background-color: $white;
+}
+
+.employer-container-1 {
+  box-sizing: border-box;
+  margin: 20px 20px 20px 50px;
+  height: 420px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  float: left;
+  background-color: $white;
+
+}
+
+.employer-container-2 {
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  float: left;
+  background-color: $white;
+
+
+}
+
+.employer-right-text {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.row {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container_new2 {
+  padding: 40px 0;
+  position: relative;
+  min-width: 1080px;
+  height: 581px;
+  float: left;
+
+  box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 9px 7px -9px rgba(0,0,0,0.2);
+
+}
+
+.title-jobs {
+  padding-left: 40px;
+  padding-bottom: 10px;
+  color: $blue;
+}

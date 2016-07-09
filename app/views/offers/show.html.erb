@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @offer.image.url(:thumb) %>
+
+<p>
+  <strong>Company:</strong>
+  <%= @offer.company %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @offer.type %>
+</p>
+
+<p>
+  <strong>Remuneration:</strong>
+  <%= @offer.remuneration %>
+</p>
+
+<p>
+  <strong>Remuneration:</strong>
+  <%= @offer.city %>
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

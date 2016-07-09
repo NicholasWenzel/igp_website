@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IgpGo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="header-container"><div class="header-division">community@internsgopro.com</div></div>
+<header>
+
+		<div class="nav">
+				<div class="logo" height="55px" width="255px"></div>
+        <div class="nav-text"><a href="#">Homes</a>
+
+        <%= link_to 'Offers', offers_path %>
+        <%= link_to 'Employers', employers_path %>
+        <%= link_to 'Reviews', reviews_path %>
+        </div></div>
+
+
+</header>
+
+
+
+<%= yield %>
+
+</body>
+</html>

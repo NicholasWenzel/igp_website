@@ -1,0 +1,116 @@
+
+
+
+<br><br><br><br>
+
+<section class="banner">
+<div class="center">Find certified employers
+</section>
+
+
+<br><br>
+<h2>Employers with outstanding internship programs</h2>
+<div class="col">
+  <div class="box"><div class="employer-logo1 employer-title"><img src="/images/EYF.jpg" height="80" align="center"><br><br><% employer = Employer.first %>
+  <%= link_to employer.name, employer %><div class="employer-sub-title"><%= employer.city %></div></div>
+      Box
+      <div class="box__footer"><div class="footer_container"><div class="footer_box employer-sub-title"><a href="#">Offers</a></div><div class="footer_box employer-sub-title"><a href="#">Ratings</a></div></div>
+      </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="box"><div class="employer-logo1 employer-title"><img src="/images/EYF.jpg" height="80" align="center"><br><br><% employer = Employer.fifth %>
+  <%= link_to employer.name, employer %><div class="employer-sub-title"><%= employer.city %></div></div>
+      Box
+      <div class="box__footer"><div class="footer_container"><div class="footer_box employer-sub-title"><a href="#">Offers</a></div><div class="footer_box employer-sub-title"><a href="#">Ratings</a></div></div>
+      </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="box"><div class="employer-logo1 employer-title"><img src="/images/EYF.jpg" height="80" align="center"><br><br><% employer = Employer.find(9) %>
+  <%= link_to employer.name, employer %><div class="employer-sub-title"><%= employer.city %></div></div>
+      Box
+      <div class="box__footer"><div class="footer_container"><div class="footer_box employer-sub-title"><a href="#">Offers</a></div><div class="footer_box employer-sub-title"><a href="#">Ratings</a></div></div>
+      </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="box"><div class="employer-logo1 employer-title"><img src="/images/EYF.jpg" height="80" align="center"><br><br><% employer = Employer.last %>
+  <%= link_to employer.name, employer %><div class="employer-sub-title"><%= employer.city %></div></div>
+      Box
+      <div class="box__footer"><div class="footer_container"><div class="footer_box employer-sub-title"><a href="#">Offers</a></div><div class="footer_box employer-sub-title"><a href="#">Ratings</a></div></div>
+      </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<br><br>
+
+
+<div class="container_new">
+
+	  <h2>Employers with outstanding internship programs</h2>
+	  <div class="col-md-12">
+
+	    <div class="col-md-4 employer-container-1">
+	      <div class="employer-picture-1"></div>
+	      <div class="employer-title"> Telecom Italia </div>
+	      <div class="employer-text">Lorem ipsum sit amer<br> non secuitur<br> lorem ipsum</div>
+	    </div>
+
+	    <div class="col-md-7 employer-container-2">
+	      <div class="employer-right-text employer-title"><% employer = Employer.last %>
+        <%= link_to employer.name, employer %><br><% employer = Employer.last %>
+        <%= employer.description %></div>
+	      <div class="employer-picture-2"></div>
+	    </div>
+
+	    <div class="col-md-7 employer-container-2">
+	      <div class="employer-right-text employer-title"><% employer = Employer.find(9) %><%= link_to employer.name, employer %><br><% employer = Employer.find(9) %>
+        <%= employer.description %></div>
+	      <div class="employer-picture-2"></div>
+	    </div>
+
+	</div>
+</div>
+
+<h1>Listing Employers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Type</th>
+      <th>Remuneration</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employers.each do |employer| %>
+      <tr>
+        <td><%= employer.name %></td>
+				<td><%= employer.city %></td>
+				<td><%= employer.activitysector %></td>
+				<td><%= employer.description %></td>
+        <td><%= link_to 'Show', employer %></td>
+        <td><%= link_to 'Edit', edit_employer_path(employer) %></td>
+        <td><%= link_to 'Destroy', employer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% employer = Employer.first %>
+<%= employer.name %>
+<%= link_to employer.name, employer %>
+
+<br>
+
+<%= link_to 'New Offer', new_offer_path %>
